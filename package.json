@@ -1,0 +1,39 @@
+{
+  "name": "pkgmgr",
+  "version": "1.0.0",
+  "description": "Forward commands to the package manager you're already using",
+  "bin": {
+    "pkgmgr": "./bin/pkgmgr.js",
+    "pkgmgr-bun": "./bin/pkgmgr-bun.js",
+    "pkgmgr-pnpm": "./bin/pkgmgr-pnpm.js",
+    "pkgmgr-yarn": "./bin/pkgmgr-yarn.js",
+    "pkgmgrx": "./bin/pkgmgrx.js",
+    "pkgmgrx-bun": "./bin/pkgmgrx-bun.js",
+    "pkgmgrx-pnpm": "./bin/pkgmgrx-pnpm.js",
+    "pkgmgrx-yarn": "./bin/pkgmgrx-yarn.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test bin/lib.test.js"
+  },
+  "keywords": [
+    "npm",
+    "pnpm",
+    "yarn",
+    "bun",
+    "package-manager",
+    "cli"
+  ],
+  "author": "Kent C. Dodds <me@kentcdodds.com> (https://kentcdodds.com/)",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kentcdodds/pkgmgr.git"
+  }
+}
