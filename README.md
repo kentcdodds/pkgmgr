@@ -87,8 +87,8 @@ PKGMGR=pnpm pkgmgr add zod
 ## Usage Examples
 
 ```bash
-# Install dependencies (default command if no args)
-pkgmgr
+# Install dependencies
+pkgmgr install
 
 # Add a package
 pkgmgr add express

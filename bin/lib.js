@@ -34,12 +34,9 @@ export async function run(fallback = 'npm') {
   const pm = detectPackageManager(fallback)
   const args = process.argv.slice(2)
 
-  // Default to 'install' if no arguments provided
-  const command = args.length > 0 ? args : ['install']
-
   const { spawn } = await import('node:child_process')
 
-  const child = spawn(pm, command, {
+  const child = spawn(pm, args, {
     stdio: 'inherit',
     shell: process.platform === 'win32',
   })
