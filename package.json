@@ -1,6 +1,6 @@
 {
   "name": "pkgmgr",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Forward commands to the package manager you're already using",
   "bin": {
     "pkgmgr": "./bin/pkgmgr.js",
