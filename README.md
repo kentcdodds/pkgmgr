@@ -1,4 +1,4 @@
-d # pkgmgr
+# pkgmgr
 
 A minimal CLI that forwards commands to whichever package manager you're already using.
 
