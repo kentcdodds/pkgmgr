@@ -2,7 +2,7 @@
 
 A minimal CLI that forwards commands to whichever package manager you're already using.
 
-![Diff showing package.json scripts being updated to use pkgmgr instead of npm. Scripts like "postinstall", "start", "dev", "build", and "test" are changed from using "npm" and "npx" to "pkgmgr" and "pkgmgrx". The result: these scripts now work seamlessly whether contributors use npm, pnpm, yarn, or bun.](./diff-example.png)
+![Diff showing package.json scripts being updated to use pkgmgr instead of npm. Scripts like "postinstall", "start", "dev", "build", and "test" are changed from using "npm" and "npx" to "pkgmgr" and "pkgmgrx". The result: these scripts now work seamlessly whether contributors use npm, pnpm, yarn, or bun.](./demo.png)
 
 **What's happening here:** A project replaces hardcoded `npm` and `npx` calls with `pkgmgr` and `pkgmgrx` in their package.json scripts. Now when a contributor runs `pnpm run dev`, the script uses `pnpm`. When another runs `bun run dev`, it uses `bun`. No configuration, no conditional logic—just automatic package manager detection.
 
