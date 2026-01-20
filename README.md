@@ -1,8 +1,10 @@
-# pkgmgr
+d # pkgmgr
 
 A minimal CLI that forwards commands to whichever package manager you're already using.
 
-![Diff showing package.json scripts being updated to use pkgmgr instead of npm. Scripts like "postinstall", "start", "dev", "build", and "test" are changed from using "npm" and "npx" to "pkgmgr" and "pkgmgrx". The result: these scripts now work seamlessly whether contributors use npm, pnpm, yarn, or bun.](./demo.png)
+<a href="https://github.com/epicweb-dev/full-stack-foundations/commit/fdb0644909a6d5e847b9bf3fb12e8efd120aa036">
+  <img src="./demo.png" alt="Diff showing package.json scripts being updated to use pkgmgr instead of npm. Scripts like postinstall, start, dev, build, and test are changed from using npm and npx to pkgmgr and pkgmgrx. The result: these scripts now work seamlessly whether contributors use npm, pnpm, yarn, or bun." style="max-width: 691px; max-height: 868px;" />
+</a>
 
 **What's happening here:** A project replaces hardcoded `npm` and `npx` calls with `pkgmgr` and `pkgmgrx` in their package.json scripts. Now when a contributor runs `pnpm run dev`, the script uses `pnpm`. When another runs `bun run dev`, it uses `bun`. No configuration, no conditional logic—just automatic package manager detection.
 
